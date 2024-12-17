@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Azra Baday | 22220504 </title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Just+Me+Again+Down+Here&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/style.css">
+<style>
+body, h1,h2,h3,h4,h5,h6 {
+    font-family: "Just Me Again Down Here", serif;
+    background-color: black;
+    color: white;
+}
+.w3-row-padding img {margin-bottom: 12px}
+/* Set the width of the sidebar to 120px */
+#main {margin-left: 120px}
+/* Remove margins from "page content" on small screens */
+@media only screen and (max-width: 600px) {#main {margin-left: 0}}
+
+form {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    width: 60%;
+    margin: 0 auto;
+}
+
+input, textarea, select, button {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    background-color: #444;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #e91e63;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #666;
+}
+h2 {
+    text-align: center;
+    margin-top: 40px; /* Adds space from the top of the page */
+    font-size:36px;
+}
+
+label {
+    font-size: 18px;
+}
+
+.success-message {
+            display: none;
+            background-color: #28a745;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            margin-top: 20px;
+            border-radius: 5px;
+            font-size:20px;
+        }
+
+        /* Error message styles */
+        .error-message {
+            display: none;
+            background-color: #dc3545;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            margin-top: 20px;
+            border-radius: 5px;
+        }
+
+
+
+</style>
+</head>
+<body>
+    <section id="basvuru-formu">
+        <div class="form-container">
+            <h2>Başvuru Formu</h2>
+    
+            <!-- Success and Error Messages -->
+            <div id="success-message" class="success-message">
+                Başvurunuz başarıyla gönderilmiştir.
+            </div>
+            <div id="error-message" class="error-message">
+                Lütfen bütün alanları doldurunuz.
+            </div>
+    
+            <!-- Başvuru Formu -->
+            <form id="application-form" action="#" method="POST">
+                <label for="ad-soyad">Ad Soyad:</label>
+                <input type="text" id="ad-soyad" name="ad_soyad" required>
+    
+                <label for="email">E-posta:</label>
+                <input type="email" id="email" name="email" required>
+    
+                <label for="telefon">Telefon Numarası:</label>
+                <input type="tel" id="telefon" name="telefon" required>
+    
+                <label for="basvuru-alani">Başvuru Alanı:</label>
+                <select id="basvuru-alani" name="basvuru_alani" required>
+                    <option value="oyun-tasarimi">Oyun Tasarımı</option>
+                    <option value="web-tasarimi">Web Tasarımı</option>
+                </select>
+    
+                <label for="konu">Konu:</label>
+                <textarea id="konu" name="konu" rows="4" required></textarea>
+                
+                <label for="mesaj">Mesaj:</label>
+                <textarea id="mesaj" name="mesaj" rows="4" required></textarea>
+    
+                <!-- Gönder ve Anasayfa Butonları -->
+                <button class="message-button" type="submit">
+                    <i class="fa fa-paper-plane"></i> Başvuruyu Gönder
+                </button>
+                <button class="message-button" type="button" onclick="window.location.href='../index.html'">
+                    <i class="fa fa-home"></i> Anasayfa
+                </button>
+            </form>
+        </div>
+    </section>
+    
+    <footer>
+        <p>&copy; Azra BADAY | Tüm Hakları Saklıdır</p>
+    </footer>
+    
+    <!-- JavaScript -->
+    <script>
+        // Form, success message, and error message
+        const form = document.getElementById('application-form');
+        const successMessage = document.getElementById('success-message');
+        const errorMessage = document.getElementById('error-message');
+        const inputs = form.querySelectorAll('input, textarea, select');
+    
+        // Event listener for form submission
+        form.addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent default form submission
+    
+            let allFilled = true;
+    
+            // Check all required inputs
+            inputs.forEach(input => {
+                if (!input.value.trim()) { // Check for empty or whitespace inputs
+                    allFilled = false;
+                }
+            });
+    
+            if (allFilled) {
+                successMessage.style.display = 'block'; // Show success message
+                errorMessage.style.display = 'none'; // Hide error message
+                form.reset(); // Reset the form
+            } else {
+                errorMessage.style.display = 'block'; // Show error message
+                successMessage.style.display = 'none'; // Hide success message
+            }
+        });
+    </script>
+    
+    </body>
+    </html>

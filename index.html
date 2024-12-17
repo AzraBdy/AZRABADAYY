@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Azra Baday | 22220504 </title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Just+Me+Again+Down+Here&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/style.css">
+<style>
+body, h1,h2,h3,h4,h5,h6 {font-family: "Just Me Again Down Here", serif;}
+.mySlides {display: none; }
+
+.w3-row-padding img {margin-bottom: 12px}
+/* Set the width of the sidebar to 120px */
+.w3-sidebar {width: 120px;background: #222;}
+/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+#main {margin-left: 120px}
+/* Remove margins from "page content" on small screens */
+@media only screen and (max-width: 600px) {#main {margin-left: 0}}
+</style>
+</head>
+<body class="w3-black">
+  <body>
+
+ <html>
+
+<!-- Icon Bar (Sidebar - hidden on small screens) -->
+<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+  <!-- Avatar image in top left corner -->
+  <img src="img/logom.svg" style="width:100%">
+
+
+
+  
+  <a href="#home" class="w3-bar-item w3-button w3-padding-large">
+    <i class="fa fa-home w3-xxlarge"></i>
+    <p>ANASAYFA</p>
+  </a>
+  <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-user w3-xxlarge"></i>
+    <p>HAKKIMDA</p>
+  </a>
+  <a href="#photos" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-eye w3-xxlarge"></i>
+    <p>FOTOĞRAFLAR</p>
+  </a>
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-envelope w3-xxlarge"></i>
+    <p>İLETİŞİM</p>
+  </a>
+</nav>
+
+<!-- Navbar on small screens (Hidden on medium and large screens) -->
+<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+  <div class="w3-bar w3-opacity w3-hover-opacity-off w3-center w3-small">
+    <a href="#home" class="w3-bar-item w3-button" style="width:25% !important">ANASAYFA</a>
+    <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">HAKKIMDA</a>
+    <a href="#photos" class="w3-bar-item w3-button" style="width:25% !important">PROJELERİM</a>
+    <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">İLETİŞİM</a>
+  </div>
+</div>
+
+<!-- Page Content -->
+<div class="w3-padding-large" id="main">
+  <!-- Header/Home -->
+  <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+    <h1 class="w3-jumbo">Azra Baday.</h1>
+    <p>Web ve Oyun Tasarımı.</p>
+    
+    <!-- Fixed Image (3.svg) -->
+
+
+    <div class="w3-container w3-center">
+      <div class="mySlides w3-display-container w3-center">
+          <img src="img/2.svg" style="width:90%" class="thumbnail" onclick="openModal('img/2.svg')">
+      </div>
+      <div class="mySlides w3-display-container w3-center">
+          <img src="img/1.svg" style="width:90%" class="thumbnail" onclick="openModal('img/1.svg')">
+      </div>
+      <div class="mySlides w3-display-container w3-center">
+          <img src="img/3.svg" style="width:90%" class="thumbnail" onclick="openModal('img/3.svg')">
+      </div>
+  </div>
+    <!-- Modal for displaying the image -->
+    <div id="myModal" class="modal">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <img class="modal-content" id="modalImage">
+      <div id="caption"></div>
+  </div>
+
+
+</header>
+
+
+  <!-- About Section -->
+  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+    <h2 class="w3-text-light-grey">Tanıtım</h2>
+    <hr style="width:200px" class="w3-opacity">
+    <p>Merhaba. Ben Azra, 21 yaşındayım. Pamukkale Üniversitesi'nde eğitim görmekteyim. Oyun tasarımı ve assetler üzerine çalışıyorum. 
+    </p>
+    <h3 class="w3-padding-16 w3-text-light-grey">Hizmetlerim</h3>
+    <hr style="width:200px" class="w3-opacity">
+
+    <p class="w3-wide">Oyun Tasarımı</p>
+    <div class="w3-white">
+      <div class="w3-lines" style="height:28px;width:65%"></div>
+    </div>
+    <p class="w3-wide">Web Tasarımı</p>
+    <div class="w3-white">
+      <div class="w3-lines" style="height:28px;width:50%"></div>
+    </div>
+    <p class="w3-wide">Photoshop</p>
+    <div class="w3-white">
+      <div class="w3-lines" style="height:28px;width:60%"></div>
+    </div><br>
+    
+    <div class="w3-row w3-center w3-padding-16 w3-section w3-light-grey">
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">11+</span><br>
+        Partnerler
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">55+</span><br>
+        Tamamlanan Projelerim
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">89+</span><br>
+        Mutlu Müşteriler
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">150+</span><br>
+        Buluşmalar
+      </div>
+    </div>
+
+    <a href="img/gecmis.png" target="_blank">
+    <button class="button-download">
+      <i class="fa fa-download"></i> Özgeçmişimi görüntüleyin.
+    </button>
+  </a>
+    <!-- Grid for pricing tables -->
+    <h3 class="w3-padding-16 w3-text-light-grey">Birlikte Çalışalım!</h3>
+    <hr style="width:200px" class="w3-opacity">
+
+    <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-half w3-margin-bottom">
+        <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+          <li class="padding-bar">Oyun Tasarımı</li>
+          <li class="padding-bar-li">Blender</li>
+          <li class="padding-bar-li">Unity</li>
+          <li class="padding-bar-li">Unreal Engine</li>
+          <li class="padding-bar-li">Figma</li>
+          <li class="w3-padding-16">
+            <h2>$ 25</h2>
+            <span class="w3-opacity">Aylık</span>
+          </li>
+          <li class="w3-light-grey w3-padding-20"> 
+            <a href="assets/basvuru.html"> <button class="button-sign">Başvurun </button></a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="w3-half">
+        <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+          <li class="padding-bar">Web Tasarımı</li>
+          <li class="padding-bar-li">Photoshop</li>
+          <li class="padding-bar-li">HTML&CSS</li>
+          <li class="padding-bar-li">50GB Depolama Alanı</li>
+          <li class="padding-bar-li">Figma</li>
+          <li class="w3-padding-16">
+            <h2>$ 25</h2>
+            <span class="w3-opacity">Aylık</span>
+          </li>
+            <li class="w3-light-grey w3-padding-20"> 
+                <a href="assets/basvuru.html"> <button class="button-sign">Başvurun </button></a>
+          </li>
+        </ul>
+      </div>
+
+
+
+
+      
+    <!-- End Grid/Pricing tables -->
+    </div>
+    
+    <!-- Testimonials -->
+    <h3 class="w3-padding-24 w3-text-light-grey">Projelerim</h3> 
+    <hr style="width:200px" class="w3-opacity">
+
+    <img src="img/counter.png" alt="Avatar" class="projects" style="width:50%"class="thumbnail" onclick="openModal('img/counter.png')"> >
+    <p class="projects-p "> Yapmış olduğum basit counter programının web üzerinden gösterimi. </p>
+    
+    <img src="img/game.png" alt="Avatar" class="projects" style="width:50%"class="thumbnail" onclick="openModal('img/game.png')">>
+    <p class="projects-p "> Henüz daha çok başında olduğum, Unity üzerinden çalıştığım basit bir oyun. </p>
+
+  <!-- End About Section -->
+  </div>
+  
+  <!-- Portfolio Section -->
+  <div class="w3-padding-64 w3-content" id="photos">
+    <h2 class="w3-text-light-grey">Fotoğraflarım</h2>
+    <hr style="width:200px" class="w3-opacity">
+
+    <!-- Grid for photos -->
+    <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-half">
+        <img src="img/10.jpg" style="width:100%" class="modal-img grid-photo" onclick="openModal('img/10.jpg')">
+        <img src="img/11.jpg" style="width:100%" class="modal-img grid-photo" onclick="openModal('img/11.jpg')">
+        <img src="img/12.jpg" style="width:100%"  class="modal-img grid-photo"onclick="openModal('img/12.jpg')">
+      </div>
+
+      <div class="w3-half">
+        <img src="img/6.jpg" style="width:100%" class="modal-img grid-photo" onclick="openModal('img/6.jpg')"> 
+        <img src="img/7.jpg "style="width:100%" class="modal-img grid-photo"onclick="openModal('img/7.jpg')" >
+        <img src="img/8.jpg" style="width:100%" class="modal-img grid-photo" onclick="openModal('img/8.jpg')">
+        <img src="img/9.jpg" style="width:100%" class="modal-img grid-photo" onclick="openModal('img/9.jpg')">
+      </div>
+    <!-- End photo grid -->
+    </div>
+  <!-- End Portfolio Section -->
+  </div>
+
+  <!-- Contact Section -->
+  <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
+    <h2 class="w3-text-light-grey">İletişime Geçin</h2>
+    <hr style="width:200px" class="w3-opacity">
+
+    <div class="w3-section">
+      <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Denizli, Türkiye</p>
+      <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: +00 151515</p>
+      <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: azraabadayy@gmail.com</p>
+    </div><br>
+    <p>Mesaj gönderin.</p>
+
+    <div id="success-message" class="success-message">
+     Mesajınız başarıyla gönderilmiştir.
+  </div>
+
+
+
+
+  <form id="message-form" action="#" method="POST">
+
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="İsim" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Email" required name="Email"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Konu" required name="Subject"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Mesaj" required name="Message"></p>
+      <p>
+        <button class="message-button" type="submit">
+          <i class="fa fa-paper-plane"></i> MESAJ GÖNDER
+        </button>
+
+        <button class="contact-button" type="button">
+          <i class="fa fa-envelope"></i> BANA ULAŞIN
+        </button>
+
+
+      </p>
+    </form>
+  <!-- End Contact Section -->
+  </div>
+  
+    <!-- Footer -->
+    <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
+      <a href="https://www.facebook.com" target="blank" class="w3-hover-opacity" title="Facebook">
+          <i class="fa fa-facebook-official"></i>
+      </a>
+      <a href="https://www.instagram.com" target="blank" class="w3-hover-opacity" title="Instagram">
+          <i class="fa fa-instagram"></i>
+      </a>
+      <a href="https://www.snapchat.com" target="blank" class="w3-hover-opacity" title="Snapchat">
+          <i class="fa fa-snapchat"></i>
+      </a>
+      <a href="https://www.pinterest.com" target="blank" class="w3-hover-opacity" title="Pinterest">
+          <i class="fa fa-pinterest-p"></i>
+      </a>
+      <a href="https://www.twitter.com" target="blank" class="w3-hover-opacity" title="Twitter">
+          <i class="fa fa-twitter"></i>
+      </a>
+      <a href="https://www.linkedin.com" target="blank" class="w3-hover-opacity" title="LinkedIn">
+          <i class="fa fa-linkedin"></i>
+      </a>
+  </footer>
+  
+    <p class="w3-medium">Azra BADAY</p>
+  <!-- End footer -->
+  </footer>
+
+<!-- END PAGE CONTENT -->
+</div>
+<script>
+// Automatic Slideshow - change image every 4 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 3000);    
+}
+
+document.querySelector(".contact-button").addEventListener("click", function(event) {
+    event.preventDefault(); // Formun varsayılan gönderimini engeller.
+    
+    // Form alanlarını al
+    const name = document.querySelector("input[name='Name']").value;
+    const email = document.querySelector("input[name='Email']").value;
+    const subject = document.querySelector("input[name='Subject']").value;
+    const message = document.querySelector("input[name='Message']").value;
+
+    // E-posta içeriği oluştur
+    const mailtoLink = `mailto:azraabadayy@mail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(
+        `İsim: ${name}\nEmail: ${email}\n\nMesaj:\n${message}`
+    )}`;
+
+    // Kullanıcıyı mailto bağlantısına yönlendir
+    window.location.href = mailtoLink;
+});
+
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the image and insert it inside the modal
+function openModal(imageSrc) {
+    modal.style.display = "block";
+    var modalImage = document.getElementById("modalImage");
+    modalImage.src = imageSrc;
+}
+
+// Get the <span> element to close the modal
+function closeModal() {
+    modal.style.display = "none";
+}
+
+document.querySelectorAll('.photo-grid img').forEach(img => {
+    img.addEventListener('click', function() {
+        this.style.maxWidth = '90%';   // Görselin boyutunu sınırla
+        this.style.maxHeight = '80vh';
+    });
+});
+
+
+const form = document.getElementById('message-form');
+        const successMessage = document.getElementById('success-message');
+        const errorMessage = document.getElementById('error-message');
+        const inputs = form.querySelectorAll('input, textarea, select');
+    
+        // Event listener for form submission
+        form.addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent default form submission
+    
+            let allFilled = true;
+    
+            // Check all required inputs
+            inputs.forEach(input => {
+                if (!input.value.trim()) { // Check for empty or whitespace inputs
+                    allFilled = false;
+                }
+            });
+    
+            if (allFilled) {
+                successMessage.style.display = 'block'; // Show success message
+                errorMessage.style.display = 'none'; // Hide error message
+                form.reset(); // Reset the form
+            } else {
+                errorMessage.style.display = 'block'; // Show error message
+                successMessage.style.display = 'none'; // Hide success message
+            }
+        });
+
+
+
+</script>
+
+</body>
+</html>

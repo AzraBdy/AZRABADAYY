@@ -1,0 +1,167 @@
+
+h1 {
+  word-wrap: break-word; /* Uzun kelimelerin bir sonraki satıra geçmesini sağlar */
+  overflow: hidden; /* Taşan metni gizler */
+  text-align: center; /* Yazıyı ortalar */
+}
+
+
+button {
+    background-color: #e91e63;
+    color: white;
+    border: none;
+    padding: 15px 20px;
+    cursor: pointer;
+  }
+  
+  /* Fareyle üzerine gelindiğinde */
+  button:hover {
+    background-color: #FDCEDF;
+    color: white;
+  }
+
+
+  .padding-bar {
+   background-color: #e91e63;
+   font-size:28px;
+   color:white;
+  }
+  footer a {
+    text-decoration: none; /* Alt çizgiyi kaldırır */
+}
+
+  
+  p {
+    font-size: 18px;
+  }
+
+  .padding-bar-li{
+    font-size: 18px;
+
+  }
+
+  .projects-container {
+    display: flex; /* Esnek düzen */
+    flex-direction: column; /* Dikey sıralama */
+    align-items: center; /* Yatayda ortalama */
+    justify-content: center; /* Dikeyde ortalama */
+    text-align: center; /* Metni ortala */
+    margin: 0 auto; /* Kapsayıcıyı yatay ortala */
+    padding: 30px; /* İçerik çevresine boşluk */
+  }
+  
+  /* Her bir proje bloğu */
+  .project {
+    margin-bottom: 100%; /* Projeler arası boşluk */
+    margin-top: 80%;
+  }
+  
+  /* Görsellerin stili */
+  .projects {
+    display: block; /* Görseli blok olarak göster */
+    margin: 0 auto; /* Görseli yatay ortala */
+    width: 50%; /* Görsel genişliği */
+    max-width: 500px; /* Görselin maksimum genişliği */
+    height: auto; /* Oranı koru */
+  }
+  
+  /* Metin stili */
+  .projects-p {
+    font-weight: bold; /* Kalın metin */
+    font-size: 1.4rem; /* Metin boyutu */
+    display: block; /* Metni yeni satıra taşı */
+    margin-bottom: 20px; /* Alt boşluk */
+    margin: 0 auto;
+    text-align:center;
+    justify-content:center;
+    align-items:center;
+  }
+
+
+
+.w3-lines {
+    background-color:#e91e63;
+
+}
+
+.w3-button-w3-padding-large{
+   background-color:#e91e63;
+
+}
+.w3-bar-item w3-button{
+    background-color:#e91e63;
+
+}
+.w3-button  w3-padding-large{
+  background-color:#e91e63;
+
+}
+.message-buton:hover{
+    background-color:#e91e63;
+}
+
+
+/* Modal Styles */
+.modal {
+  display: none; /* Modal başlangıçta gizli olacak */
+  position: fixed; /* Ekranın üstünde sabitlenmiş olacak */
+  z-index: 1; /* Diğer öğelerin üstünde görünecek */
+  left: 0px;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9); /* Arka plan kararması */
+  padding-top: 80px;
+}
+
+/* Modal Content (Image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  height:90%;
+  position:absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Gerçekten ortalamak için */
+    transition: transform 0.25s ease; /* Büyütme efekti */
+}
+
+
+
+/* Caption for the image */
+#caption {
+  margin: 40px auto;
+  text-align: center;
+  color: #fff;
+  font-size: 20px;
+}
+
+/* Close Button */
+.close {
+  color: #fff;
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.success-message {
+  font-size:20px;
+  display: none;
+  background-color: #28a745;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  margin-top: 20px;
+  border-radius: 5px;
+}
